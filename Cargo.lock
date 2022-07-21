@@ -898,7 +898,7 @@ name = "chain-spec-builder"
 version = "2.0.0"
 dependencies = [
  "ansi_term",
- "clap 3.1.18",
+ "clap 3.2.14",
  "node-cli",
  "rand 0.8.4",
  "sc-chain-spec",
@@ -975,16 +975,16 @@ dependencies = [
 
 [[package]]
 name = "clap"
-version = "3.1.18"
+version = "3.2.14"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d2dbdf4bdacb33466e854ce889eee8dfd5729abf7ccd7664d0a2d60cd384440b"
+checksum = "54635806b078b7925d6e36810b1755f2a4b5b4d57560432c1ecf60bcbe10602b"
 dependencies = [
  "atty",
  "bitflags",
  "clap_derive",
  "clap_lex",
  "indexmap",
- "lazy_static",
+ "once_cell",
  "strsim",
  "termcolor",
  "textwrap 0.15.0",
@@ -992,18 +992,18 @@ dependencies = [
 
 [[package]]
 name = "clap_complete"
-version = "3.0.2"
+version = "3.2.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a394f7ec0715b42a4e52b294984c27c9a61f77c8d82f7774c5198350be143f19"
+checksum = "ead064480dfc4880a10764488415a97fdd36a4cf1bb022d372f02e8faf8386e1"
 dependencies = [
- "clap 3.1.18",
+ "clap 3.2.14",
 ]
 
 [[package]]
 name = "clap_derive"
-version = "3.1.18"
+version = "3.2.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "25320346e922cffe59c0bbc5410c8d8784509efb321488971081313cb1e1a33c"
+checksum = "759bf187376e1afa7b85b959e6a664a3e7a95203415dba952ad19139e798f902"
 dependencies = [
  "heck 0.4.0",
  "proc-macro-error",
@@ -1014,9 +1014,9 @@ dependencies = [
 
 [[package]]
 name = "clap_lex"
-version = "0.2.0"
+version = "0.2.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a37c35f1112dad5e6e0b1adaff798507497a18fceeb30cceb3bae7d1427b9213"
+checksum = "2850f2f5a82cbf437dd5af4d49848fbdfc27c157c3d010345776f952765261c5"
 dependencies = [
  "os_str_bytes",
 ]
@@ -2128,7 +2128,7 @@ version = "4.0.0-dev"
 dependencies = [
  "Inflector",
  "chrono",
- "clap 3.1.18",
+ "clap 3.2.14",
  "comfy-table",
  "frame-benchmarking",
  "frame-support",
@@ -2210,7 +2210,7 @@ dependencies = [
 name = "frame-election-solution-type-fuzzer"
 version = "2.0.0-alpha.5"
 dependencies = [
- "clap 3.1.18",
+ "clap 3.2.14",
  "frame-election-provider-solution-type",
  "frame-election-provider-support",
  "frame-support",
@@ -4588,7 +4588,7 @@ dependencies = [
 name = "node-bench"
 version = "0.9.0-dev"
 dependencies = [
- "clap 3.1.18",
+ "clap 3.2.14",
  "derive_more",
  "fs_extra",
  "futures",
@@ -4627,7 +4627,7 @@ version = "3.0.0-dev"
 dependencies = [
  "assert_cmd",
  "async-std",
- "clap 3.1.18",
+ "clap 3.2.14",
  "clap_complete",
  "criterion",
  "frame-benchmarking-cli",
@@ -4743,7 +4743,7 @@ dependencies = [
 name = "node-inspect"
 version = "0.9.0-dev"
 dependencies = [
- "clap 3.1.18",
+ "clap 3.2.14",
  "parity-scale-codec",
  "sc-cli",
  "sc-client-api",
@@ -4895,7 +4895,7 @@ dependencies = [
 name = "node-runtime-generate-bags"
 version = "3.0.0"
 dependencies = [
- "clap 3.1.18",
+ "clap 3.2.14",
  "generate-bags",
  "node-runtime",
 ]
@@ -4904,7 +4904,7 @@ dependencies = [
 name = "node-template"
 version = "4.0.0-dev"
 dependencies = [
- "clap 3.1.18",
+ "clap 3.2.14",
  "frame-benchmarking",
  "frame-benchmarking-cli",
  "frame-system",
@@ -8061,7 +8061,7 @@ name = "sc-cli"
 version = "0.10.0-dev"
 dependencies = [
  "chrono",
- "clap 3.1.18",
+ "clap 3.2.14",
  "fdlimit",
  "futures",
  "hex",
@@ -10097,7 +10097,7 @@ dependencies = [
 name = "sp-npos-elections-fuzzer"
 version = "2.0.0-alpha.5"
 dependencies = [
- "clap 3.1.18",
+ "clap 3.2.14",
  "honggfuzz",
  "parity-scale-codec",
  "rand 0.8.4",
@@ -10530,7 +10530,7 @@ dependencies = [
 name = "subkey"
 version = "2.0.2"
 dependencies = [
- "clap 3.1.18",
+ "clap 3.2.14",
  "sc-cli",
 ]
 
@@ -10558,7 +10558,7 @@ dependencies = [
 name = "substrate-frame-cli"
 version = "4.0.0-dev"
 dependencies = [
- "clap 3.1.18",
+ "clap 3.2.14",
  "frame-support",
  "frame-system",
  "sc-cli",
@@ -11317,7 +11317,7 @@ checksum = "59547bce71d9c38b83d9c0e92b6066c4253371f15005def0c30d9657f50c7642"
 name = "try-runtime-cli"
 version = "0.10.0-dev"
 dependencies = [
- "clap 3.1.18",
+ "clap 3.2.14",
  "jsonrpsee",
  "log",
  "parity-scale-codec",
